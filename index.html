@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật!</title>
+    <!-- Thư viện hiệu ứng pháo hoa -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thẻ chứa chính -->
+    <div class="card">
+        <div class="avatar-container">
+            <!-- Thay link ảnh người nhận ở src bên dưới -->
+            <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Sinh Nhật Vui Vẻ">
+            <span class="badge">HAPPY DAY</span>
+        </div>
+
+        <h1>Chúc Mừng Sinh Nhật! 🎉</h1>
+
+        <div class="letter">
+            <p>Gửi người bạn tuyệt vời của tôi,</p>
+            <p>Nhân ngày đặc biệt này, chúc bạn luôn giữ được nụ cười tươi trên môi, luôn tràn đầy năng lượng và hạnh phúc.</p>
+            <p>Mong rằng tuổi mới sẽ mang đến cho bạn thật nhiều may mắn, gặt hái được nhiều thành công và hoàn thành mọi mục tiêu đã đề ra nhé!</p>
+            <p class="signature">— From your best friend ❤️</p>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn" id="btn-music">
+                <span id="music-icon">🎵</span> <span id="music-text">Phát Nhạc</span>
+            </button>
+            <button class="btn btn-secondary" id="btn-fireworks">
+                ✨ Pháo Hoa
+            </button>
+        </div>
+    </div>
+
+    <!-- Nhạc Happy Birthday MP3 -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_2c270924e2.mp3?filename=happy-birthday-126284.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
